@@ -1,0 +1,9 @@
+public class Driver
+{
+    public static void main()
+    {
+        CovidAnalyzer ca = new CovidAnalyzer();
+        //ca.printCountries();
+        ca.Rule();
+    }
+}
