@@ -1,0 +1,197 @@
+import java.util.*;
+import java.io.*;
+public class CovidAnalyzer
+{
+    private ArrayList<CovidCases>covid;
+    public CovidAnalyzer()
+    {
+        covid = new ArrayList<CovidCases>();
+        try{
+            Scanner sc = new Scanner( new File("full_data.txt"));
+            String line = sc.nextLine();
+           while(sc.hasNext())
+            {
+                try{
+                line = sc.nextLine();
+                int fC = line.indexOf("," );
+                String date = line.substring(0,fC);
+                int sC = line.indexOf(',',line.indexOf(',')+1);
+                String country = line.substring(fC+1, sC);
+                int i = line.indexOf(',', 1 + line.indexOf(',', 1 + line.indexOf(',')));
+                String newCases = line.substring( sC+1, i);
+                
+                int nC = Integer.parseInt(newCases);
+                //System.out.println( nC);
+                covid.add( new CovidCases( date, country, nC));
+            }catch(NumberFormatException ex) {}
+            }
+            
+        }catch(FileNotFoundException ex) {}
+         
+    }
+    public void printCountries()
+    {
+        for( int i=0; i<covid.size();i++)
+        {
+            System.out.println(covid.get(i).getCountry());
+        }
+    }
+    public void Rule()
+    {
+        double one=0.0;
+        double two=0;
+        double three=0;
+        double four=0;
+        double five=0;
+        double six=0;
+        double seven=0;
+        double eight=0;
+        double nine=0;
+        //double zero = 0;
+        int number=0;
+        int firstDigit=0;
+        double total=0.0;
+        boolean exit = true;
+        System.out.println("Please Enter Which Country You Would Like To See or Type World To See the World's Data");
+       
+        Scanner sc = new Scanner(System.in);
+        String country = sc.nextLine();
+        
+        for(int i = 0; i<covid.size();i++)
+        {
+        
+        
+           
+            if( !country.equals("World"))
+        {
+            if( covid.get(i).getCountry().equals(country))
+        {
+            if (covid.get(i).getNC() != 0)
+            {
+            try{
+            total++;
+            number = covid.get(i).getNC();
+            firstDigit = Integer.parseInt(Integer.toString(number).substring(0, 1));
+            
+            //if( firstDigit == 0)
+            //{
+                //zero++;
+            //}
+            if(firstDigit == 1)
+            {
+                one++;
+            }
+            if(firstDigit == 2)
+            {
+                two++;
+            }
+            if(firstDigit == 3)
+            {
+                three++;
+            }
+            if(firstDigit == 4)
+            {
+                four++;
+            }
+            if(firstDigit == 5)
+            {
+                five++;
+            }
+            if(firstDigit == 6)
+            {
+                six++;
+            }
+            if(firstDigit == 7)
+            {
+                seven++;
+            }
+            if(firstDigit == 8)
+            {
+                eight++;
+            }
+            if(firstDigit == 9)
+            {
+                nine++;
+            }
+        }catch (NumberFormatException ex) {}
+    }
+        }
+    }
+    else{
+        if (covid.get(i).getNC() != 0)
+            {
+            try{
+            total++;
+            number = covid.get(i).getNC();
+            firstDigit = Integer.parseInt(Integer.toString(number).substring(0, 1));
+            
+            //if( firstDigit == 0)
+            //{
+                //zero++;
+            //}
+            if(firstDigit == 1)
+            {
+                one++;
+            }
+            if(firstDigit == 2)
+            {
+                two++;
+            }
+            if(firstDigit == 3)
+            {
+                three++;
+            }
+            if(firstDigit == 4)
+            {
+                four++;
+            }
+            if(firstDigit == 5)
+            {
+                five++;
+            }
+            if(firstDigit == 6)
+            {
+                six++;
+            }
+            if(firstDigit == 7)
+            {
+                seven++;
+            }
+            if(firstDigit == 8)
+            {
+                eight++;
+            }
+            if(firstDigit == 9)
+            {
+                nine++;
+            }
+        }catch (NumberFormatException ex) {}
+    }
+    
+    }
+
+}
+    one = (int)((one/total)*100);
+    two=(int)((two/total)*100);
+    three=(int)((three/total)*100);
+    four= (int)((four/total)*100);
+    five= (int)((five/total)*100);
+    six= (int)((six/total)*100);
+    seven= (int)((seven/total)*100);
+    eight= (int)((eight/total)*100);
+    nine= (int)((nine/total)*100);
+    //zero = (int)((zero/total)*100);
+    //System.out.println(zero + "% of 0s");
+    System.out.println(one + "% of 1s");
+    System.out.println(two + "% of 2s");
+    System.out.println(three + "% of 3s");
+    System.out.println(four + "% of 4s");
+    System.out.println(five + "% of 5s");
+    System.out.println(six + "% of 6s");
+    System.out.println(seven + "% of 7s");
+    System.out.println(eight + "% of 8s");
+    System.out.println(nine + "% of 9s");
+    //System.out.println(total);
+
+    }
+}
