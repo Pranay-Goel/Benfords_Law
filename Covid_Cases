@@ -1,0 +1,25 @@
+public class CovidCases
+{
+    private String date;
+    private String country;
+    private int newCases;
+    public CovidCases( String d, String c, int nc)
+    {
+        date = d;
+        country = c;
+        newCases = nc; 
+    }
+    public String getDate()
+    {
+        return date;
+    }
+    public String getCountry()
+    {
+        return country; 
+    }
+    public int getNC()
+    {
+        return newCases;
+    }
+    
+}
