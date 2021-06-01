@@ -1,0 +1,50 @@
+Mount Whitney,14505
+Mount Williamson,14379
+White Mountain Peak,14252
+North Palisade,14248
+Mount Shasta,14179
+Mount Humphreys,13992
+Mount Keith,13982
+Mount Darwin,13837
+Mount Kaweah,13807
+Mount Morgan,13758
+Mount Gabb,13747
+Mount Tom,13657
+Mount Dubois,13565
+Mount Pinchot,13500
+Mount Ritter,13149
+Red Slate Mountain,13129
+Mount Lyell,13120
+Mount Dana,13063
+Mount Conness,12649
+Needham Mountain,12545
+Twin Peaks,12329
+Olancha Peak,12132
+Eagle Peak,11853
+Tower Peak,11760
+Mount Patterson,11679
+San Joaquin Mountain,11608
+Leavitt Peak,11573
+Kern Peak,11520
+San Gorgonio Mountain,11503
+Sonora Peak,11464
+Waucoba Mountain,11128
+Glass Mountain,11128
+Keynot Peak,11105
+Telescope Peak,11043
+Mammoth Mountain,11036
+Highland Peak,10942
+Freel Peak,10886
+Mount Hoffmann,10855
+San Jacinto Peak,10834
+Lassen Peak,10462
+Round Top,10390
+Mount San Antonio,10068
+Pyramid Peak,9985
+Peak 9980,9985
+Sugarloaf Mountain,9956
+Eagle Peak,9895
+Mount Eddy,9037
+Thompson Peak,8999
+Tin Mountain,8961
+Mount Pinos,8847
